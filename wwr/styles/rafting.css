@@ -1,0 +1,56 @@
+:root{
+    --primary-color1: 69, 123, 157;
+    --primary-color2: 242, 250, 239;
+    --accent1-color: 29, 53, 87;
+    --accent2-color:  230, 57, 70;
+    --heading-font: boldonse;
+    --text-font: "Open Sans";
+ 
+ }
+ h1, h2{
+     font-family: var(--heading-font);
+ }
+ p{
+    font-family: var(--text-font);
+ }
+ footer a{
+     text-decoration: none;
+ }
+ footer img{
+     height: 40px;
+ }
+
+ .hero-image{
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+ .hero h1{
+
+  
+ }
+ .hero {
+    position: relative;
+ }
+article{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--accent1-color), 0.7);
+    top: 30%;
+    left: 0;  
+    height: 300px;
+    color: white;
+    gap: 50px;
+
+}
+.title-div{
+    width: 100%;
+    background-color: rgba(var(--primary-color2), 0.5);
+    position: absolute;
+    top: 10%;
+    text-align: center;
+
+}
