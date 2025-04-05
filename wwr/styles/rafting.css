@@ -13,12 +13,36 @@
  p{
     font-family: var(--text-font);
  }
- footer a{
-     text-decoration: none;
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(var(--primary-color2));
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 5px;
  }
- footer img{
-     height: 40px;
+ header img{
+    width: 150px;
+    grid-column-start: 2;
  }
+ header nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    grid-column-start: 4;
+ }
+ header nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 50px 10px 50px;
+    text-wrap: nowrap;
+    border: 1px solid black;
+
+ }
+ 
 
  .hero-image{
      display: block;
@@ -27,26 +51,77 @@
  }
  .hero {
     position: relative;
+    border: 2px solid black;
+    margin-bottom: 5px;
  }
 article{
     position: absolute;
     display: flex;
-    width: 100%;
+    width: 70%;
     justify-content: center;
     align-items: center;
     background-color: rgba(var(--accent1-color), 0.7);
     top: 30%;
-    left: 0;  
+    left: 15%;  
     height: 300px;
     color: white;
     gap: 50px;
+    padding: 20px;
 
 }
 .title-div{
     width: 100%;
-    background-color: rgba(var(--primary-color2), 0.5);
     position: absolute;
     top: 10%;
     text-align: center;
-
+}
+.title-div h1{
+    font-size: 50px;
+    text-shadow: 1px 1px 5px white;
+}
+.history-container{
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+.history-container h2{
+    text-align: center;
+}
+.history{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 50px;
+    padding: 20px;
+    align-items: center;
+}
+.gallery-container{
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+.gallery-container h2{
+    text-align: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 20px;
+}
+.gallery img{
+    width: 250px;
+    height: 200px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 85% 5% 5% 5%;
+    padding: 20px;
+    border: 2px solid black;
+}
+footer a{
+    text-decoration: none;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
+footer img{
+    height: 40px;
 }
