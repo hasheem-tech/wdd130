@@ -131,7 +131,9 @@ footer img{
     margin-bottom: 5px;
     padding: 20px;
 }
-
+.contact-container h1{
+    text-align: center;
+}
 .contact{
     display: flex;
     justify-content: center;
