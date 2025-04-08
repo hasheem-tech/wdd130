@@ -7,8 +7,11 @@
     --text-font: "Open Sans";
  
  }
- h1, h2{
+ h1, h2, h3{
      font-family: var(--heading-font);
+ }
+ h2{
+    text-align: center;
  }
  p{
     font-family: var(--text-font);
@@ -83,9 +86,7 @@ article{
     border: 2px solid black;
     margin-bottom: 5px;
 }
-.history-container h2{
-    text-align: center;
-}
+
 .history{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -96,10 +97,9 @@ article{
 .gallery-container{
     border: 2px solid black;
     margin-bottom: 5px;
+    padding: 20px;
 }
-.gallery-container h2{
-    text-align: center;
-}
+
 .gallery{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -124,4 +124,125 @@ footer p{
 }
 footer img{
     height: 40px;
+}
+
+.contact-container{
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.contact div{
+    background-color: rgb(var(--accent1-color));
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+}
+
+.office-container{
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.office{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.office-view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.office-view img{
+    width: 250px;
+    height: 200px;
+}
+
+.team-container{
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+.message-container{
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-family: var(--text-font);
+}
+
+fieldset {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-family: var(--heading-font);
+    color: black;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.inquiry {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    background-color: rgb(var(--accent2-color));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(var(--accent1-color));
 }
