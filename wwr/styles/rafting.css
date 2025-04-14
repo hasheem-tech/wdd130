@@ -32,17 +32,17 @@ header{
     grid-column-start: 2;
  }
  header nav{
-    background-color: white;
+    background-color: rgb(var(--accent1-color));
     display: flex;
     justify-content: space-around;
     grid-column-start: 4;
  }
  header nav a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px 50px 10px 50px;
     text-wrap: nowrap;
-    border: 1px solid black;
+    border: 1px solid white;
 
  }
  
@@ -60,12 +60,12 @@ header{
 article{
     position: absolute;
     display: flex;
-    width: 70%;
+
     justify-content: center;
     align-items: center;
     background-color: rgba(var(--accent1-color), 0.7);
     top: 30%;
-    left: 15%;  
+    left: 0%;  
     height: 300px;
     color: white;
     gap: 50px;
@@ -75,16 +75,17 @@ article{
 .title-div{
     width: 100%;
     position: absolute;
-    top: 10%;
+    top: 0%;
     text-align: center;
 }
 .title-div h1{
-    font-size: 50px;
-    text-shadow: 1px 1px 5px white;
+    color: rgb(var(--accent2-color));
+    font-size: 100px;
+    text-shadow: 1px 1px 5px black;
 }
 .history-container{
     border: 2px solid black;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .history{
@@ -93,6 +94,10 @@ article{
     gap: 50px;
     padding: 20px;
     align-items: center;
+}
+.history img{
+    width: 500px;
+    height: 300px;
 }
 .gallery-container{
     border: 2px solid black;
@@ -167,6 +172,7 @@ footer img{
 .office-view img{
     width: 250px;
     height: 200px;
+    border-radius: 15px;
 }
 
 .team-container{
@@ -206,8 +212,8 @@ label {
     display: block;
 }
 
-input[type="text"],
-input[type="email"],
+form input[type="text"],
+form input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
@@ -249,3 +255,141 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: rgb(var(--accent1-color));
 }
+
+.newsletter-signup{
+    position: absolute;
+    left: 33%;
+    top: 25%;
+    
+}
+.newsletter-signup h3{
+    margin-left: 100px;
+    text-shadow: 2px 2px 5px white;
+}
+#newsletter-email{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    width: 250px;
+  }
+#newsletter-name{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    width: 150px;
+}
+
+#newsletter-button{
+    padding: 10px 20px;
+    background-color: rgb(var(--accent1-color));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .trip-gallery-container{
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 20px 150px 20px 150px;
+}
+
+.trip-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+.trip-figure {
+    max-width: 300px;
+    margin: 20px;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .trip-figure:hover {
+    transform: scale(1.02);
+  }
+
+  .trip-figure img {
+    width: 100%;
+    display: block;
+    height: 250px;
+  }
+
+  .trip-figure figcaption {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .trip-button {
+    margin: 0 auto 15px auto;
+    padding: 10px 20px;
+    background-color: rgb(var(--accent1-color));
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  .trip-figure p{
+    margin: 7px;
+  }
+
+
+  .book-trip{
+    position: absolute;
+    top: 27%;
+    left: 43%;
+  }
+  .book-trip h3{
+    text-shadow: 2px 2px 5px white;
+  }
+
+  .trips-table {
+    border-style: groove;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: groove;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+thead,
+th {
+    background-color: rgb(var(--accent1-color));
+    color: white;
+}
+
+th,
+td {
+    border: groove;
+    padding: 8px 10px;
+}
+
